@@ -164,10 +164,3 @@ This lets you explore and test endpoints (Register, Login, Tasks CRUD, etc.).
 └── README.md
 ```
 
-## Contributing
-
-Contributions are welcome — please open an issue or submit a pull request with tests and a clear description of your changes.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
