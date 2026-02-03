@@ -1,4 +1,4 @@
-# Scalable Task Management (RBAC) — Scalable REST API + React UI 🚀
+# Scalable Task Management (RBAC) — Scalable REST API + React UI 
 
 A production-ready Task Management system with JWT authentication and Role-Based Access Control (RBAC). The repository is split into two folders: `backend` (Express + MongoDB) and `client` (React + Vite + Tailwind CSS).
 
@@ -19,9 +19,9 @@ A production-ready Task Management system with JWT authentication and Role-Based
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### ✅ Backend (Scalable REST API)
+###  Backend (Scalable REST API)
 * **Authentication**: Secure User Registration & Login using **JWT (JSON Web Tokens)** and **Bcrypt** hashing.
 * **RBAC (Role-Based Access Control)**: Middleware to distinguish between `User` and `Admin` roles.
 * **CRUD Operations**: Complete Create, Read, Update, and Delete functionality for Tasks.
@@ -29,7 +29,7 @@ A production-ready Task Management system with JWT authentication and Role-Based
 * **Validation**: Robust input validation and error handling.
 * **Security**: Implements security best practices (Helmet, CORS, HPP).
 
-### 🎨 Frontend (Modern UI)
+###  Frontend (Modern UI)
 * **Tech Stack**: Built with **React (Vite)** for lightning-fast performance.
 * **Styling**: **Tailwind CSS v4** for a professional, responsive design.
 * **State Management**: React Hooks (`useState`, `useEffect`) for managing data.
@@ -38,7 +38,7 @@ A production-ready Task Management system with JWT authentication and Role-Based
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component | Technology |
 | :--- | :--- |
