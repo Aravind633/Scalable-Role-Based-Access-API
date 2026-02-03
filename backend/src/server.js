@@ -2,8 +2,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
-const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const swaggerSpecs = require('./config/swagger'); // Import the config we just created
 
 // Config
 dotenv.config();
@@ -15,22 +15,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Swagger Config
-const swaggerOptions = {
-  swaggerDefinition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'Internship API',
-      version: '1.0.0',
-      description: 'Production Ready API with Auth & RBAC',
-    },
-    servers: [{ url: 'http://localhost:5000' }],
-  },
-  apis: ['./src/routes/*.js'], 
-};
-
-const swaggerDocs = swaggerJsDoc(swaggerOptions);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+// Swagger Documentation Route
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
 
 // Routes (Versioning added)
 app.use('/api/v1/auth', require('./routes/authRoutes'));
